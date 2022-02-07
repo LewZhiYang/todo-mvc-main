@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const connectDB = async () => {
+const tryingByChangingNames = async () => {
   try {
     const conn = await mongoose.connect(process.env.DB_STRING, {
       useNewUrlParser: true,
@@ -15,4 +15,4 @@ const connectDB = async () => {
   }
 }
 
-module.exports = connectDB
+module.exports = tryingByChangingNames
