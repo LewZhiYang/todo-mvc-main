@@ -4,4 +4,4 @@ const express = require('express')
 const router = express.Router()
 const todosController = require('../controllers/todos')
 
-router.post('/', todosController.createTodo)
+router.get('/', todosController.getTodos)
