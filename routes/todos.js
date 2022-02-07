@@ -9,7 +9,7 @@ router.get('/', todosController.getTodos)
 router.post('/createTodo', todosController.createTodo)
 
 // added to learn stuff
-app.use('/test123', testRoutes)
+app.route('/test123').get(todosController.createTodo)
 
 router.put('/markComplete', todosController.markComplete)
 
